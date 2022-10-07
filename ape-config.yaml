@@ -1,0 +1,4 @@
+name: ape-nft-project
+plugins:
+  - name: vyper
+
