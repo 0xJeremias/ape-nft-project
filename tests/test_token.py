@@ -27,12 +27,12 @@ def test_init(nft, owner):
 def test_mint_and_add_minter(nft, owner, receiver):
     assert nft.balanceOf(owner) == 0
     assert nft.balanceOf(receiver) == 0
-    nft.mint(receiver,sender=owner)
+    nft.mint(receiver, sender=owner)
     assert nft.balanceOf(owner) == 0
     assert nft.balanceOf(receiver) == 1
     assert nft.ownerOf(1) == receiver.address
     nft.addMinter(receiver, sender=owner)
-    nft.mint(receiver,sender=receiver)
+    nft.mint(receiver, sender=receiver)
     assert nft.balanceOf(owner) == 0
     assert nft.balanceOf(receiver) == 2
     assert nft.ownerOf(2) == receiver.address
@@ -65,7 +65,7 @@ def test_incorrect_signer_transfer(nft, owner, receiver):
     assert nft.balanceOf(receiver) == 0
     nft.mint(owner, sender=owner)
     with ape.reverts():
-        nft.transferFrom(owner,receiver,1,sender=receiver)    
+        nft.transferFrom(owner, receiver, 1, sender=receiver)
     assert nft.balanceOf(receiver) == 0
     assert nft.balanceOf(owner) == 1
     assert nft.ownerOf(1) == owner.address
@@ -88,7 +88,7 @@ def test_approve_transfer(nft, owner, receiver):
     assert nft.balanceOf(receiver) == 0
     assert nft.balanceOf(owner) == 1
     assert nft.ownerOf(1) == owner.address
-    
+
     with ape.reverts():
         nft.approve(receiver, 1, sender=receiver)
         nft.transferFrom(owner, receiver, 1, sender=receiver)
@@ -106,9 +106,10 @@ def test_approve_transfer(nft, owner, receiver):
 
 def test_uri(nft, owner):
 
-    assert nft.baseURI() == "ipfs://QmfBhQ7jk64f852pwYsj5RKZp68ntX1LqGod98MZQxbwrv"
+    assert nft.baseURI() == "https://ipfs.io/ipfs/QmUeth4a2HAp6PynLzBr2g5pUPHDA2mQ5hc8davyx2Xf5L"
     nft.mint(owner, sender=owner)
-    assert nft.tokenURI(1) == "ipfs://QmfBhQ7jk64f852pwYsj5RKZp68ntX1LqGod98MZQxbwrv/1"
+    assert nft.tokenURI(
+        1) == "https://ipfs.io/ipfs/QmUeth4a2HAp6PynLzBr2g5pUPHDA2mQ5hc8davyx2Xf5L/1"
 
     nft.setBaseURI("new base uri", sender=owner)
     assert nft.baseURI() == "new base uri"

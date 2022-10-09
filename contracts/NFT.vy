@@ -3,6 +3,7 @@
 from vyper.interfaces import ERC165
 from vyper.interfaces import ERC721
 
+
 implements: ERC165
 implements: ERC721
 
@@ -116,8 +117,8 @@ EIP712_DOMAIN_VERSIONHASH: constant(bytes32) = keccak256("1")
 
 
 # ERC20 Token Metadata
-NAME: constant(String[20]) = "Jeremias NFT"
-SYMBOL: constant(String[5]) = "JeNFT"
+NAME: constant(String[20]) = "Ape Academy NFT V1"
+SYMBOL: constant(String[5]) = "apNFT"
 baseURI: public(String[100])
 # @dev Maximum supply of token
 MAX_SUPPLY: constant(uint256) = 10000
@@ -128,7 +129,7 @@ def __init__():
     @dev Contract constructor.
     """
     self.owner = msg.sender
-    self.baseURI = "ipfs://QmfBhQ7jk64f852pwYsj5RKZp68ntX1LqGod98MZQxbwrv"
+    self.baseURI = "https://ipfs.io/ipfs/QmUeth4a2HAp6PynLzBr2g5pUPHDA2mQ5hc8davyx2Xf5L"
     # ERC712 domain separator for ERC4494
     self.DOMAIN_SEPARATOR = keccak256(
         _abi_encode(
@@ -456,3 +457,5 @@ def mint(receiver: address) -> uint256:
     log Transfer(empty(address), receiver, self.totalSupply)
 
     return self.totalSupply
+#0x187089b65520D2208aB93FB471C4970c29eAf929
+#0xe6bA6be7d17f0977F3E610B98329fdfAc3ea2A6d
