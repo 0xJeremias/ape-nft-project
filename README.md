@@ -5,7 +5,7 @@
 ```
 - Python 3.7.2 o superior.
 - Linux o mac OS.
-- Windows instalar [(WSL)(https://learn.microsoft.com/en-us/windows/wsl/install)
+- Windows instalar [(WSL)](https://learn.microsoft.com/en-us/windows/wsl/install)
 - VSCode (por ser el más popular)
 ```
 
