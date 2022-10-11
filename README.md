@@ -2,13 +2,11 @@
 
 ## Requisitos para este tutorial:
 
-
 -   Python 3.7.2 o superior.
 -   Git
 -   Linux o mac OS.
 -   Windows instalar [(WSL)](https://learn.microsoft.com/en-us/windows/wsl/install)
 -   VSCode (por ser el más popular)
-
 
 Si no sabe si tiene python instalado y/o quiere saber que version de python tiene use:  
 `python3 –-version`.
@@ -114,4 +112,6 @@ Podria ejectuar:
 `$ ape test`
 
 Y no deberia tener ningun error.
-Felicitaciones por haber llegado hasta este punto!!, el siguiente paso es preparar el NFT y para eso vamos a utilizar una herramienta externa llamada PINATA:ject`.
+
+Felicitaciones por haber llegado hasta este punto!!, el siguiente paso es preparar el NFT y para eso vamos a utilizar una herramienta externa llamada PINATA:
+.
