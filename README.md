@@ -1,9 +1,10 @@
 # Create your first NFT with ApeWorx & Vyper [[EN](#english)/[ES](#español)]
 ![Header](https://raw.githubusercontent.com/jbchoncen/ape-nft-project/master/img/head.png)
 ### English:
-```
-Hello! The objective of this tutorial is to share this step by step as if they were notes, so that you can understand what we are doing at all times and it is accessible to anyone without much knowledge.
-```
+
+### Hello! The objective of this tutorial is to share this step by step as if they were notes, so that you can understand what we are doing at all times and it is accessible to anyone without much knowledge.
+
+
 The following guide is made following the challenge of [Apeworx Academy](https://academy.apeworx.io/challenge)
 
 ## Requirements for this tutorial:
@@ -81,7 +82,7 @@ I should get a response, in my case:
 0.5.1
 ```
 
-## Installing Necessary Plugins:
+## Installing Plugins:
 
 Ape provides a lightweight installation with only necessary plugins, and gives you the ability to only install the ones you need,
 thus avoid installing unnecessary software.
@@ -259,7 +260,7 @@ To confirm that we loaded the `API-KEY` correctly, we execute the following comm
 echo $WEB3_ALCHEMY_PROJECT_ID
 ```
 
-# Create or import a Wallet Address:
+# Create or import a Wallet:
 
 
 ## To create:
@@ -288,7 +289,7 @@ In this case the only difference is that the "private key" must be entered, whic
 (...) , Accounts Details, Export private Key, (you will be asked for your password).
 
 
-# Anchoring:
+# Founding:
 You can fund your account at the following [link](https://goerlifaucet.com/). Enter the address of your account and in a few seconds you will have test ether.
 
 You can list the accounts registered with:
@@ -296,7 +297,7 @@ You can list the accounts registered with:
 ape accounts list --all
 ```
 
-# Connect to Goerli and implement:
+# Connect to Goerli and Deploy:
 
 Before connecting, you could run the following command to display the connection structure:
 ```
@@ -377,9 +378,9 @@ ___________
 
 
 ### Español:
-```
-Hola! el objetivo de este tutorial, es el de compartir este paso a paso como si fueran apuntes, para que pueda entender que estamos haciendo en cada momento y sea accesible a cualquier persona sin mucho conocimiento.
-```
+
+### Hola! el objetivo de este tutorial, es el de compartir este paso a paso como si fueran apuntes, para que pueda entender que estamos haciendo en cada momento y sea accesible a cualquier persona sin mucho conocimiento.
+
 
 La siguiente guia esta realizada siguiendo el challenge de [Apeworx Academy](https://academy.apeworx.io/challenge)
 
@@ -480,7 +481,7 @@ Verifique que tiene instalado Vyper:
 $ ape plugins install vyper -y
 ```
 
-## Ape ERC721 emplate:
+## Ape ERC721 template:
 
 ```
 $ ape template gh:ApeAcademy/ERC721
@@ -681,7 +682,7 @@ Puede listar las cuentas registradas con:
 ape accounts list --all
 ```
 
-# Conectarse a Goerli e implementar:
+# Conectarse a Goerli y Deploy:
 
 Antes de conectar, podria ejecutar el siguiente comando para visualizar la estructura de coneccion:
 ```
@@ -709,7 +710,7 @@ Esto nos devolvera nuestro balance, pero si queremos verlo en un formato mas ami
 test01.balance / 1e18
 ```
 
-# Deploy / implementar:
+# Deploy:
 
 ```
 contract = project.NFT.deploy(sender=test01)
