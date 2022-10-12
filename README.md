@@ -1,4 +1,4 @@
-# Creando tu primer NFT con ApeWorx (Template) & Vyper
+# Crea tu primer NFT con ApeWorx (Template) & Vyper
 ![Header](https://raw.githubusercontent.com/jbchoncen/ape-nft-project/master/img/head.png)
 
 
