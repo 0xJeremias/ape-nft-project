@@ -1,0 +1,20 @@
+{
+    "name": "ApeBot #2",
+    "description": "I made this NFT following the course from Ape Academy",
+    "external_url": "https://academy.apeworx.io/",
+    "image" : "https://ipfs.io/ipfs/YOUR_FOLDER_IMG_CID/test_nft2.png",
+    "attributes": [
+        {
+            "trait_type": "Name",
+            "value": "ApeBot"
+        }, 
+        {
+            "trait_type": "Type",
+            "value": "Ape"
+        },
+        {
+            "trait_type": "Sub-Type",
+            "value": "Mechanic"
+        }
+    ]
+}
